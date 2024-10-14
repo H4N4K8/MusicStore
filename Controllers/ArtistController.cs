@@ -19,6 +19,7 @@ namespace MusicStore.Controllers
         }
 
         // GET: Artist
+        [Route("Artists/list/[action]/sort_enter_1_or_2/{ArtistSort?}")]
         public IActionResult Index(int ArtistSort=0)
         {
             if (ArtistSort == 2)
